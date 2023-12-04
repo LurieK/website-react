@@ -1,3 +1,6 @@
+import linkedin3 from '../images/linkedin3.png';
+import github from '../images/github-mark-white.png';
+
 function Header (){
 
 return(
@@ -5,13 +8,13 @@ return(
         <ul class="header-links">
             <li>
                 <a href="https://github.com/LurieK" target="_blank">
-                    <img alt="github" src="../images/github-mark-white.png"/>
+                    <img alt="github" src={github}/>
                     <p>GitHub</p>
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/luriekimmerle/" target="_blank">
-                    <img alt="linkedin"src="../images/linkedin3.png"/>
+                    <img alt='LinkedIn' src={linkedin3}/>
                     <p>LinkedIn</p>
                 </a>
             </li>

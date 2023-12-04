@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+@import './styles/header.css';
+
+@font-face {
+    font-family: 'Bogart';
+    src: url('./styles/transfonter.org-20230409-074459/BogartTrial-Regular.woff2') format('woff2'),
+        url('./styles/transfonter.org-20230409-074459/BogartTrial-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.opening, .about, .portfolio, .responsive-portfolio, .contact{
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+    transform: translateY(30px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    background-color: #F6F6F6;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    width: 100%;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    font-family: 'Bogart';
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: 20px;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+    font-family: 'Montserrat';
+    font-size: 70px;
+    font-weight: 400;
 }
+
+h3 {
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 20px;
+}
+
+p {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.links a {
+    display: flex;
+    flex-flow: row;
+}
+
+ul img {
+    padding-top: 12px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.links li {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.links li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    }
