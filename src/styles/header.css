@@ -67,3 +67,93 @@ header {
     position: relative;
     z-index: 1;
 }
+@media screen and (max-width: 1000px) {
+    header {
+        display: none;
+    }
+
+    .opening {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .desktop-opening {
+        display: none;
+    }
+
+    .responsive-opening {
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .opening h1 {
+        font-size: 75px;
+    }
+
+    .img-container {
+        display: none;
+        
+    }
+
+    .res-img-container {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    .res-opening-img {
+        width: 75%;
+    }
+
+    .opening h1 {
+        margin-bottom: 5%;
+    }
+
+    .opening-icons {
+        padding-top: 0;
+    }
+
+    .opening-icons li img {
+        width: 40px;
+        height: auto;
+    }
+
+    .github-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .linkedin-img {
+        width: 30px;
+    }
+
+    
+    .subtitle {
+        display: flex;
+        flex-flow: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .subtitle p {
+        margin-bottom: 5px;
+    }
+
+    .email {
+        border-bottom: 1px solid #000000;
+        width: 30%;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    p {
+        font-weight: 300;
+    }
+}

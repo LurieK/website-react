@@ -5,7 +5,7 @@ function Header (){
 
 return(
     <header>
-        <ul class="header-links">
+        <ul className="header-links">
             <li>
                 <a href="https://github.com/LurieK" target="_blank">
                     <img alt="github" src={github}/>
@@ -20,7 +20,7 @@ return(
             </li>
 
         </ul>
-        <ul class="menu">
+        <ul className="menu">
             <li>
                 <a href="#portfolio">
                     <p>Projects</p>
