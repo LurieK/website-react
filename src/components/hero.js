@@ -13,7 +13,7 @@ const Hero = React.forwardRef(({ style }, ref) =>{
 
 
 return (
-    <div ref={ref} style={style} className="hero">
+    <div ref={ref} style={style} className="opening">
         
         <div className="opening-text">
             <p className="phone-opening">Front End Developer</p>
@@ -50,9 +50,12 @@ return (
                 <li><img src={html}/>
                 </li>
             </ul>
-        
-
         </div>
+        <div class="img-container">
+            <img alt="image of Lurie" className='opening-img' src={headshot}/>
+        </div>
+
+        
 
     </div>
 
