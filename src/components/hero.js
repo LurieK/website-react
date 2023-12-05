@@ -6,7 +6,8 @@ import git from '../images/stack_imgs/3.png';
 import figma from '../images/stack_imgs/icons8-figma-50.png';
 import css from '../images/stack_imgs/6.png';
 import html from '../images/stack_imgs/7.png';
-
+import projects from './components/projects';
+import Project from './project';
 import  React  from 'react';
 import useVisibility from '../components/useVisable';
 
@@ -19,6 +20,15 @@ function Hero(){
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
 
+    const projectList = projects.map(project=>
+        <Project 
+            key={projects.key}
+            title={projects.title}
+            image={projects.image}
+            link={projects.link} />
+
+    )
+
 return (
     <div ref={ref} style={sectionStyle} className="opening">
         
@@ -30,7 +40,10 @@ return (
             {/* <!-- for responsive layout --> */}
             <div className="responsive-opening">
                 <div className="res-img-container">
-                    <img alt="Image of Lurie"className='res-opening-img' src={headshot}/>
+                    {projectList}
+                    
+                    
+                    />
                 </div>
             
             </div>
