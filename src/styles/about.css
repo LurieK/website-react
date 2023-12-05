@@ -1,0 +1,57 @@
+.about {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+.about p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about h2 {
+    font-size: 60px;
+}
+
+.about-txt {
+    margin-right: 20px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+@media screen and (min-width: 1000px) {
+    .about img {
+        margin-right: 50px;
+        width: 40%;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about h2 {
+        font-size: 35px;
+    }
+
+    .about img {
+        width: 60%;
+        margin-top: 100px;
+        padding-bottom: 50px;
+        margin-right: 0;
+    }
+
+    .about-txt {
+        width: 75%;
+    }
+}

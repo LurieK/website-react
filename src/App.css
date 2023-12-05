@@ -1,5 +1,8 @@
 @import './styles/header.css';
 @import './styles/hero.css';
+@import './styles/about.css';
+@import './styles/footer.css';
+
 
 @font-face {
     font-family: 'Bogart';
@@ -10,7 +13,7 @@
     font-display: swap;
 }
 
-.opening, .about, .portfolio, .responsive-portfolio, .contact{
+.opening, .about, .portfolio, .responsive-portfolio{
     opacity: 0;
     transition: opacity 1s, transform 1s;
     transform: translateY(30px);

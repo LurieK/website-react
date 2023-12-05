@@ -1,0 +1,63 @@
+.contact {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B3242;
+    color: white;
+}
+
+.contact p {
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.links a {
+    display: flex;
+    flex-flow: row;
+}
+
+ul img {
+    padding-top: 12px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.links li {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.links li:hover {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .links {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}

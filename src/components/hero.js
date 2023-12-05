@@ -8,12 +8,19 @@ import css from '../images/stack_imgs/6.png';
 import html from '../images/stack_imgs/7.png';
 
 import  React  from 'react';
+import useVisibility from '../components/useVisable';
 
-const Hero = React.forwardRef(({ style }, ref) =>{
+function Hero(){
+    
+    const [isVisible, ref] = useVisibility();
 
+    const sectionStyle = {
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
+    };
 
 return (
-    <div ref={ref} style={style} className="opening">
+    <div ref={ref} style={sectionStyle} className="opening">
         
         <div className="opening-text">
             <p className="phone-opening">Front End Developer</p>
@@ -60,6 +67,6 @@ return (
     </div>
 
     
-)
-})
+    )
+}
 export default Hero

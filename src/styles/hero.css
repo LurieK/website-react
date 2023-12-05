@@ -6,11 +6,16 @@
     width: 100%;
     height: 75%;
     background-color: #e2e0e0b0;
+    
    
 }
 
 .phone-opening {
     display: none;
+}
+
+.opening h1{
+    text-shadow: 5px 5px 15px 0px rgba(0,0,0,.5);
 }
 
 .opening p {
