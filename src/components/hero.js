@@ -1,15 +1,17 @@
 import headshot from'../images/IMG_1364.JPG';
-import react from '../images/stack_imgs/1.png';
-import javascript from '../images/stack_imgs/2.png';
-import node from '../images/stack_imgs/4.png';
-import git from '../images/stack_imgs/3.png';
-import figma from '../images/stack_imgs/icons8-figma-50.png';
-import css from '../images/stack_imgs/6.png';
-import html from '../images/stack_imgs/7.png';
-import projects from './components/projects';
+// import react from '../images/stack_imgs/1.png';
+// import javascript from '../images/stack_imgs/2.png';
+// import node from '../images/stack_imgs/4.png';
+// import git from '../images/stack_imgs/3.png';
+// import figma from '../images/stack_imgs/icons8-figma-50.png';
+// import css from '../images/stack_imgs/6.png';
+// import html from '../images/stack_imgs/7.png';
+import projectsObj from './projectsObj';
 import Project from './project';
 import  React  from 'react';
 import useVisibility from '../components/useVisable';
+import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
+import { RiJavascriptLine } from "react-icons/ri";
 
 function Hero(){
     
@@ -20,14 +22,16 @@ function Hero(){
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
 
-    const projectList = projects.map(project=>
+    const projectList = projectsObj.map(project=> 
         <Project 
-            key={projects.key}
-            title={projects.title}
-            image={projects.image}
-            link={projects.link} />
-
+            key={project.key}
+            title={project.title}
+            image={project.image}
+            link={project.url} />
+        
     )
+
+    console.log(projectsObj)
 
 return (
     <div ref={ref} style={sectionStyle} className="opening">
@@ -43,7 +47,7 @@ return (
                     {projectList}
                     
                     
-                    />
+                
                 </div>
             
             </div>
@@ -55,24 +59,24 @@ return (
             </div>
             <ul className="opening-icons">
         
-                <li><img src={react}/>
+                <li><FaReact />
                 </li>
-                <li><img src={javascript}/>
+                <li><RiJavascriptLine />
                 </li>
-                <li><img src={node}/>
+                <li><FaNodeJs />
                 </li>
-                <li><img src={git}/>
+                <li><FaGitAlt />
                 </li>
-                <li><img src={figma}/>
+                <li><FaFigma />
                 </li>
-                <li><img src={css}/>
+                <li><FaCss3Alt />
                 </li>
-                <li><img src={html}/>
+                <li><FaHtml5 />
                 </li>
             </ul>
         </div>
         <div class="img-container">
-            <img alt="image of Lurie" className='opening-img' src={headshot}/>
+            {projectList}
         </div>
 
         

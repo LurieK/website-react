@@ -5,12 +5,12 @@ function Project (props){
 
 
 return (
-    <div>
-        <img src={props.image}/>
+    <div className='project'>
+        <img className= 'project-img' src={props.image}/>
 
         <h3>{props.title}</h3>
 
-        <button><a href={props.url}></a></button>
+        <button><a href={props.link}></a></button>
     
     
     </div>

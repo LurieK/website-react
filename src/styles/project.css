@@ -1,0 +1,14 @@
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    width: 75%;
+    
+}
+
+
+.project-img{
+    width: 400px;
+    height: 400px;
+}

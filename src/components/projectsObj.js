@@ -1,28 +1,32 @@
-projects = [
+import todolistLaptop from '../images/todo_laptop.png';
+import tarotLaptop from '../images/tarot_laptop.png';
+
+
+const ProjectsObj = [
     {
         title: `Today's Todos`,
-        image: URL('../images/todo_laptop.png'),
+        image: todolistLaptop,
         url: '',
         key: 1
 
     },
      {
         title: `Daily Tarot`,
-        image: URL('../images/tarot_laptop.png'),
+        image: tarotLaptop,
         url: '',
         key: 2
 
     },
     {
         title: `What Was Her Name Again`,
-        image: URL('../images/tarot_laptop.png'),
+        image: tarotLaptop,
         url: '',
         key: 3
 
     },
     {
         title: `Lauren Harkness`,
-        image: URL('../images/tarot_laptop.png'),
+        image: tarotLaptop,
         url: '',
         key: 4
 
@@ -30,5 +34,4 @@ projects = [
 
 
 ]
-
-export default projects
+export default ProjectsObj

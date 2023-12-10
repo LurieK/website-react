@@ -4,7 +4,7 @@ import About from './components/about';
 // import Client from './components/client';
 import Header from './components/header';
 import Hero from './components/hero';
-// import Projects from './components/projects';
+import Project from './components/projectsObj';
 import Footer from './components/footer';
 
 function App() {
@@ -16,8 +16,7 @@ function App() {
       <Header />
       <Hero />
       <About/>
-      {/* <Client/>
-      <Projects/>*/}
+      {/* <Client/>*/}
       <Footer/> 
     </div>
   );
