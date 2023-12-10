@@ -1,11 +1,4 @@
 import headshot from'../images/IMG_1364.JPG';
-// import react from '../images/stack_imgs/1.png';
-// import javascript from '../images/stack_imgs/2.png';
-// import node from '../images/stack_imgs/4.png';
-// import git from '../images/stack_imgs/3.png';
-// import figma from '../images/stack_imgs/icons8-figma-50.png';
-// import css from '../images/stack_imgs/6.png';
-// import html from '../images/stack_imgs/7.png';
 import projectsObj from './projectsObj';
 import Project from './project';
 import  React  from 'react';
@@ -27,7 +20,8 @@ function Hero(){
             key={project.key}
             title={project.title}
             image={project.image}
-            link={project.url} />
+            link={project.url}
+            summary = {project.summary} />
         
     )
 
