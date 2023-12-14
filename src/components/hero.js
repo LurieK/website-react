@@ -7,7 +7,7 @@ import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-
 import { RiJavascriptLine } from "react-icons/ri";
 
 function Hero(){
-    const [isHovering, setIsHovering] = useState(false);
+    const [isHovering, setIsHovering] = useState(true);
     console.log(isHovering)
     const containerRef= useRef(null);
 
@@ -22,7 +22,7 @@ function Hero(){
         let intervalId;
 
         if(isHovering){
-            const step = 6;
+            const step = 3;
             intervalId= setInterval(()=> {
                 if (containerRef.current){
                     containerRef.current.scrollTop += step
@@ -48,6 +48,7 @@ function Hero(){
             image={project.image}
             link={project.url}
             stack={project.stack}
+            client = {project.client}
             onHoverPause = {handleHover} />
         
     )

@@ -1,5 +1,8 @@
 import todolistLaptop from '../images/todo_laptop.png';
 import tarotLaptop from '../images/tarot_laptop.png';
+import WWHNA from'../images/WWHNA_computer.png';
+import Lauren from '../images/LH_computer.png';
+import pomedoro from '../images/working_phone.png'
 
 
 const ProjectsObj = [
@@ -9,6 +12,15 @@ const ProjectsObj = [
         url: '',
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         key: 1,
+        stack: ['React']
+
+    },
+    {
+        title: `Pomedoro App`,
+        image: pomedoro,
+        summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
+        url: '',
+        key: 5,
         stack: ['React']
 
     },
@@ -23,7 +35,8 @@ const ProjectsObj = [
     },
     {
         title: `What Was Her Name Again`,
-        image: tarotLaptop,
+        client: true,
+        image: WWHNA,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 3,
@@ -33,13 +46,15 @@ const ProjectsObj = [
     },
     {
         title: `Lauren Harkness`,
-        image: tarotLaptop,
+        client: true,
+        image: Lauren,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 4,
         stack: ['Liquid']
 
     },
+    
 
 
 ]

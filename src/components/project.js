@@ -1,6 +1,6 @@
 
 
-function Project ({ stack, link, title, image, onHoverPause }){
+function Project ({ stack, link, title, image, onHoverPause, client }){
 
 
 const displayStack = stack.map((item, index)=>{
@@ -16,16 +16,16 @@ const displayStack = stack.map((item, index)=>{
 })
 
 return (
-    <div  className='project'>
+    <div  
+        className='project'
+        onMouseEnter={()=> onHoverPause(false)}
+        onMouseOut={()=> onHoverPause(true)}>
         <img 
             className= 'project-img' 
             src={image}/>
-        <div 
-            className= 'projects-right'
-            onMouseEnter={()=> onHoverPause(false)}
-            onMouseOut={()=> onHoverPause(true)}
-            >
-            <h3>{title}</h3>
+        <div className= 'projects-right'>
+            <h3>{title}{client && ' (Client Project)'}</h3>
+
             <button 
                 
             >
