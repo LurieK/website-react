@@ -9,8 +9,7 @@ return (
         <img className= 'project-img' src={props.image}/>
         <div className= 'projects-right'>
             <h3>{props.title}</h3>
-            <p>{props.summary}</p>
-            <button><a href={props.link}></a></button>
+            <button><a href={props.link}>VIEW</a></button>
         </div>
     
     </div>
