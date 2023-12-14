@@ -21,7 +21,7 @@ return (
         <div className="about-txt">
             <h2> 👋🏻 It's great to meet you!</h2>
             <p>
-                I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people's lives. 
+                I am a Software Developer skilled in React, JavaScript, and CSS, as well as WordPress and Shopify. My love for tech is fueled by curiosity and a commitment to simplify people's lives. 
                 <br/><br/>
                 I have an eclectic background in entrepreneurship, storytelling, and religious studies. Which has given me  a unique approach to frontend and UX/UI projects, along with a strong ownership mentality. In addition, my four-year journey in remote work has taught me a lot about collaborating effectively with international teams and managing tight deadlines.
                 <br/><br/>
