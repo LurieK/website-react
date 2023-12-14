@@ -5,7 +5,7 @@
     
 }
 
-.project-right{
+.projects-right{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -29,4 +29,25 @@
     padding: 10px;
     cursor: pointer;
 
+}
+
+.projects-right .stack{
+    display:flex;
+    flex-flow: row;
+    
+    
+}
+
+.projects-right span p{
+    font-size: 16px;
+    margin: 5px
+}
+
+.stack span{
+    display: flex;
+    flex-flow: row;
+    margin-top: 10px;
+   
+    
+    
 }

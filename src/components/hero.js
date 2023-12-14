@@ -21,7 +21,7 @@ function Hero(){
             title={project.title}
             image={project.image}
             link={project.url}
-            summary = {project.summary} />
+            stack={project.stack} />
         
     )
 
@@ -39,9 +39,6 @@ return (
             <div className="responsive-opening">
                 <div className="res-img-container">
                     {projectList}
-                    
-                    
-                
                 </div>
             
             </div>
@@ -69,7 +66,7 @@ return (
                 </li>
             </ul>
         </div>
-        <div class="img-container">
+        <div className="img-container">
             {projectList}
         </div>
 
