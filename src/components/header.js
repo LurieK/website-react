@@ -27,7 +27,7 @@ return(
                 </a>
             </li>
             <li>
-                <a href="./blogs/blog.html">
+                <a href="https://luriekimmerledev.com/blogs/blog.html">
                     <p>Blog</p>
                 </a>
             </li>

@@ -1,9 +1,13 @@
+
+
 .project{
     display: flex;
     align-items: center;
     flex-flow: row;
+    transition: ease-in-out 8s;
     
 }
+
 
 .projects-right{
     display: flex;

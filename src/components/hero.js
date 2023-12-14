@@ -1,13 +1,16 @@
 import headshot from'../images/IMG_1364.JPG';
 import projectsObj from './projectsObj';
 import Project from './project';
-import  React  from 'react';
+import  React, { useState, useEffect, useRef }  from 'react';
 import useVisibility from '../components/useVisable';
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { RiJavascriptLine } from "react-icons/ri";
 
 function Hero(){
-    
+    const [isHovering, setIsHovering] = useState(false);
+    console.log(isHovering)
+    const containerRef= useRef(null);
+
     const [isVisible, ref] = useVisibility();
 
     const sectionStyle = {
@@ -15,17 +18,41 @@ function Hero(){
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
 
+    useEffect(()=>{
+        let intervalId;
+
+        if(isHovering){
+            const step = 6;
+            intervalId= setInterval(()=> {
+                if (containerRef.current){
+                    containerRef.current.scrollTop += step
+                }
+            }, 50)
+        }
+        return ()=>{
+            if(intervalId){
+                clearInterval(intervalId)
+            }
+        }
+    
+    },[isHovering])
+
+    const handleHover= (value)=>{
+        setIsHovering(value)
+    }
+
     const projectList = projectsObj.map(project=> 
         <Project 
             key={project.key}
             title={project.title}
             image={project.image}
             link={project.url}
-            stack={project.stack} />
+            stack={project.stack}
+            onHoverPause = {handleHover} />
         
     )
 
-    console.log(projectsObj)
+
 
 return (
     <div ref={ref} style={sectionStyle} className="opening">
@@ -66,7 +93,10 @@ return (
                 </li>
             </ul>
         </div>
-        <div className="img-container">
+        <div 
+            className="img-container"
+            ref= {containerRef}
+        >
             {projectList}
         </div>
 

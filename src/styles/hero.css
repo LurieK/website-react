@@ -26,8 +26,9 @@
 .img-container{
     width: 50%;
     height: 650px;
-    overflow: scroll;
+    overflow: auto;
 }
+
 
 .opening-img {
     width: 100%;
