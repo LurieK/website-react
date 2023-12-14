@@ -7,10 +7,11 @@ import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-
 import { RiJavascriptLine } from "react-icons/ri";
 
 function Hero(){
-    const [isHovering, setIsHovering] = useState(true);
-    console.log(isHovering)
+    //State for hoving and ref for the project container
+    const [notHovering, setNotHovering] = useState(true);
     const containerRef= useRef(null);
 
+    //fade in on load
     const [isVisible, ref] = useVisibility();
 
     const sectionStyle = {
@@ -19,26 +20,30 @@ function Hero(){
     };
 
     useEffect(()=>{
-        let intervalId;
+        let intervalId; //store the ID of the interval
 
-        if(isHovering){
-            const step = 3;
+        if(notHovering){//only scrolls when the projects are not being hovered over
+            const step = 3; //set scroll to 3 pixels for each interval
+            
+            //set interval to scroll content
             intervalId= setInterval(()=> {
-                if (containerRef.current){
-                    containerRef.current.scrollTop += step
+                if (containerRef.current){//if the referenced DOM element is defined (in JSX)
+                    containerRef.current.scrollTop += step //implement scroll
                 }
-            }, 50)
+            }, 50)//fires every 50 milliseconds
         }
         return ()=>{
             if(intervalId){
-                clearInterval(intervalId)
+                clearInterval(intervalId)//prevent memory leaks
             }
         }
     
-    },[isHovering])
+    },[notHovering])//changes when notHover state changes
 
+    //stop the scroll or start depending on hover
+    //values are passed in project.js
     const handleHover= (value)=>{
-        setIsHovering(value)
+        setNotHovering(value)
     }
 
     const projectList = projectsObj.map(project=> 
