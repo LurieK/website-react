@@ -94,8 +94,8 @@ a:link {
     padding-left: 0;
 }
 
-.opening-icons li img{
-    width: 50px;
+.opening-icons li svg{
+    width: 35px;
     height: auto;
 }
 /* 

@@ -3,6 +3,7 @@
 @import './styles/about.css';
 @import './styles/footer.css';
 @import './styles/project.css';
+@import './styles/review.css';
 
 
 @font-face {
@@ -14,7 +15,7 @@
     font-display: swap;
 }
 
-.opening, .about, .portfolio, .responsive-portfolio{
+.opening, .about, .portfolio, .responsive-portfolio, .reviews{
     opacity: 0;
     transition: opacity 1s, transform 1s;
     transform: translateY(30px);

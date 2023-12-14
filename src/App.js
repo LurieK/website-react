@@ -1,11 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import About from './components/about';
-// import Client from './components/client';
 import Header from './components/header';
 import Hero from './components/hero';
-import Project from './components/projectsObj';
 import Footer from './components/footer';
+import Review from './components/review';
 
 function App() {
    
@@ -15,11 +14,11 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <Review/>
       <About/>
-      {/* <Client/>*/}
       <Footer/> 
     </div>
   );
 }
 
-export default App;
+export default App; 
