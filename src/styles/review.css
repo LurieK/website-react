@@ -21,11 +21,11 @@
 } 
 
 .fadeInLeft {
-  animation: fadeInLeft 0.5s ease;
+  animation: fadeInLeft 1.5s ease;
 }
 
 .fadeOutRight {
-  animation: fadeOutRight 0.5s ease;
+  animation: fadeOutRight 1.0s ease;
 }
 
 .reviews {
