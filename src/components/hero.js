@@ -42,9 +42,16 @@ function Hero(){
 
     //stop the scroll or start depending on hover
     //values are passed in project.js
-    const handleHover= (value)=>{
-        setNotHovering(value)
+    const handleHover = (value) => {
+    setNotHovering(value);
+    if(containerRef.current) {
+        if(value) {
+            containerRef.current.classList.remove('paused');
+        } else {
+            containerRef.current.classList.add('paused');
+        }
     }
+}
 
     const projectList = projectsObj.map(project=> 
         <Project 
