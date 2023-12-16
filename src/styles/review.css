@@ -1,4 +1,4 @@
-/* @keyframes fadeInLeft {
+@keyframes fadeInLeft {
   from {
     opacity: 0;
     transform: translateX(-100%);
@@ -18,12 +18,21 @@
     opacity: 0;
     transform: translateX(100%);
   }
-} */
+} 
+
+.fadeInLeft {
+  animation: fadeInLeft 0.5s ease;
+}
+
+.fadeOutRight {
+  animation: fadeOutRight 0.5s ease;
+}
 
 .reviews {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row;
     height: 500px;
     background-color: #F6F6F6;
@@ -41,8 +50,7 @@
     margin-right: 30px;
     margin-left: 30px;
 
-    /* animation-duration: 7s;
-    animation-timing-function: ease-in-out; */
+   
 }
 
 .review-content{
@@ -54,6 +62,7 @@
 
 .review img{
     width: 80%;
+    margin-left: 40px;
 }
 
 .review h2{
@@ -64,9 +73,25 @@
 .review h4 {
     font-family: 'Montserrat';
     font-style: italic;
-        margin: 5px 0 0 0;
+      margin: 5px 0 0 0;
 }
 
 .review p {
     text-align: center;
+}
+
+.back-button, .forward-button{
+  border-radius: 100%;
+  width: 100px;
+  height: 90px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button{
+  margin-left: 20px;
+}
+
+.forward-button {
+  margin-right: 20px;
 }
