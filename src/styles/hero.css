@@ -23,12 +23,28 @@
     font-family: 'Montserrat';
 }
 
+@keyframes scroll {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
+
 .img-container{
     width: 50%;
     height: 650px;
-    overflow: auto;
+    /* overflow: auto; */
+    overflow: hidden;
+    position: relative;
 }
 
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: scroll 10s linear infinite;
+}
 
 .opening-img {
     width: 100%;
