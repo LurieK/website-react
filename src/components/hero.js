@@ -104,6 +104,7 @@ return (
             ref= {containerRef}
         >
             {projectList}
+            {projectList}
         </div>
 
         
