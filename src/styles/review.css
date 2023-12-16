@@ -86,12 +86,18 @@
   height: 90px;
   border: none;
   cursor: pointer;
+  stroke-width: 1;
+
+
+  
 }
 
 .back-button{
   margin-left: 20px;
+
 }
 
 .forward-button {
   margin-right: 20px;
 }
+

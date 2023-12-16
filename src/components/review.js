@@ -1,6 +1,12 @@
 import reviews from './reviewObj';
 import useVisibility from '../components/useVisable';
 import React, {useState } from 'react';
+import { IoChevronBackCircleOutline, IoChevronForwardCircleOutline } from "react-icons/io5";
+
+
+
+
+
 
 
 
@@ -14,21 +20,25 @@ function Review (){
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
 
-const changeReview = (next) => {
-  setAnimation('fadeOutRight')
+const changeReviewRight = () => {
+        setAnimation('fadeOutRight');
+        setTimeout(() => {
+            setCurrentReviewIndex((prevIndex) =>
+                prevIndex === reviewList.length - 1 ? 0 : prevIndex + 1
+            );
+            setAnimation('fadeInLeft');
+        }, 500); 
+    };
 
-  setTimeout(()=> {
-    setCurrentReviewIndex((prevIndex)=>{
-      if (next) {
-        return prevIndex === reviewList.length -1 ? 0 : prevIndex + 1
-      }else{
-        return prevIndex === 0 ? reviewList.length-1 : prevIndex - 1
-      }
-    })
-    setAnimation('fadeInLeft');
-  }, 500)
-
-}
+    const changeReviewLeft = () => {
+        setAnimation('fadeOutLeft');
+        setTimeout(() => {
+            setCurrentReviewIndex((prevIndex) =>
+                prevIndex === 0 ? reviewList.length - 1 : prevIndex - 1
+            );
+            setAnimation('fadeInRight');
+        }, 500); 
+    };
 
 
 
@@ -52,9 +62,13 @@ const reviewList = reviews.map((review) => {
 
 return (
     <div ref={ref} style={sectionStyle} className='reviews'>
-      <button className= 'back-button' onClick={()=> changeReview(false)}>  </button>
+    
+      <IoChevronBackCircleOutline className= 'back-button' onClick={changeReviewRight}/>
+
         {reviewList[currentReviewIndex]}
-      <button className= 'forward-button' onClick={()=> changeReview(true)}>  </button>
+      
+      <IoChevronForwardCircleOutline className= 'forward-button' onClick={changeReviewLeft}/>
+
     </div>
 
 )
