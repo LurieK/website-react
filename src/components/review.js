@@ -5,11 +5,6 @@ import { IoChevronBackCircleOutline, IoChevronForwardCircleOutline } from "react
 
 
 
-
-
-
-
-
 function Review (){
   const [isVisible, ref] = useVisibility();
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0)
@@ -27,17 +22,17 @@ const changeReviewRight = () => {
                 prevIndex === reviewList.length - 1 ? 0 : prevIndex + 1
             );
             setAnimation('fadeInLeft');
-        }, 500); 
+        }, 1000); 
     };
 
-    const changeReviewLeft = () => {
+const changeReviewLeft = () => {
         setAnimation('fadeOutLeft');
         setTimeout(() => {
             setCurrentReviewIndex((prevIndex) =>
                 prevIndex === 0 ? reviewList.length - 1 : prevIndex - 1
             );
             setAnimation('fadeInRight');
-        }, 500); 
+        }, 1000); 
     };
 
 
