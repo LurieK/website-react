@@ -25,6 +25,7 @@ function App() {
               <About />
             </>
           } />
+          <Route path="/project/:id" element={<ViewProject />} />
         </Routes>
       <Footer/> 
     </div>
