@@ -32,6 +32,7 @@
     border: none;
     padding: 10px;
     cursor: pointer;
+    color: white;
 
 }
 
@@ -54,4 +55,19 @@
    
     
     
+}
+
+@media screen and (max-width: 1350px) {
+
+    .project {
+    display: flex;
+    flex-flow: column;
+    }
+
+    .projects-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }

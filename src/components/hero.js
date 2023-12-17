@@ -56,8 +56,9 @@ function Hero(){
     const projectList = projectsObj.map(project=> 
         <Project 
             key={project.key}
+            id={project.key}
             title={project.title}
-            image={project.image}
+            image={project.mainImage}
             link={project.url}
             stack={project.stack}
             client = {project.client}
@@ -71,19 +72,13 @@ return (
     <div ref={ref} style={sectionStyle} className="opening">
         
         <div className="opening-text">
-            <p className="phone-opening">Front End Developer</p>
+
 
             <h1>Lurie </h1> 
             <h1>Kimmerle</h1>
-            {/* <!-- for responsive layout --> */}
-            <div className="responsive-opening">
-                <div className="res-img-container">
-                    {projectList}
-                </div>
             
-            </div>
             <div className="subtitle">
-                <p className="desktop-opening">Front End Developer</p>
+        
                
                 <p className="email"><a href="mailto:LuraineKimmerle@gmail.com?subject=Website%20Inquiry">Get in Touch</a>
                 </p>
