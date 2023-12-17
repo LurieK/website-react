@@ -21,7 +21,7 @@
 } 
 
 .fadeInLeft {
-  animation: fadeInLeft 1.5s ease;
+  animation: fadeInLeft 1.0s ease;
 }
 
 .fadeOutRight {
@@ -50,7 +50,7 @@
 }
 
 .fadeInRight {
-  animation: fadeInRight 1.5s ease;
+  animation: fadeInRight 1.0s ease;
 }
 
 .fadeOutLeft {
@@ -116,10 +116,17 @@
   border: none;
   cursor: pointer;
   stroke-width: 1;
-
+  color: #b3b3b3b0;
 
   
 }
+
+
+.back-button:hover, 
+.forward-button:hover{
+  color: white;
+}
+
 
 .back-button{
   margin-left: 20px;

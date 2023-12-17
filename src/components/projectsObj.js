@@ -34,7 +34,7 @@ const ProjectsObj = [
 
     },
     {
-        title: `What Was Her Name Again`,
+        title: `What's Her Name Again?`,
         client: true,
         image: WWHNA,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',

@@ -58,11 +58,11 @@ const reviewList = reviews.map((review) => {
 return (
     <div ref={ref} style={sectionStyle} className='reviews'>
     
-      <IoChevronBackCircleOutline className= 'back-button' onClick={changeReviewRight}/>
+      <IoChevronBackCircleOutline className= 'back-button' onClick={changeReviewLeft}/>
 
         {reviewList[currentReviewIndex]}
       
-      <IoChevronForwardCircleOutline className= 'forward-button' onClick={changeReviewLeft}/>
+      <IoChevronForwardCircleOutline className= 'forward-button' onClick={changeReviewRight}/>
 
     </div>
 
