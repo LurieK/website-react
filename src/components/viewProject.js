@@ -1,43 +1,38 @@
 import ProjectsObj from "./projectsObj"
-import Header from "./header"
-import Footer from "./footer"
+import { useParams } from 'react-router-dom';
+
 
 
 
 function ViewProject(){
 
-const projectPage = ProjectsObj.map((project)=>{
-    return (
-        <div>
-            <h1>{project.title}</h1>
-            <h3>{project.stack}</h3>
-            <div> 
-                <h3>{project.link}</h3>
-                <h3>{project.github}</h3>
-            </div>
-           
-            <img src={project.mainImage}/>
-            <p>{project.summary}</p>
-            <div>
-                <img src={project.image1}/>
-                <img src={project.image2}/>
-            </div>
-            <video src={project.video}/>
-            
-        </div>
-    )
+let {id } =useParams()
 
-})
+const project = ProjectsObj.find(project => project.key.toString() === id)
 
-return (
-    <div>
-        <Header/>
-        {projectPage}
-        <Footer/>
+ if (!project) {
+    return <div>Project not found</div>;
+  }
+
+  console.log(project)
+
+  return (
+    <div className='Project-body'>
+      <h1>{project.title}</h1>
+      <h3>{project.stack.join(', ')}</h3> {/* Assuming stack is an array */}
+      <div> 
+          <h3>{project.link}</h3>
+          <h3>{project.github}</h3>
+      </div>
+      <img src={project.mainImage} alt={project.title}/>
+      <p>{project.summary}</p>
+      <div>
+          <img src={project.image1} alt=""/>
+          <img src={project.image2} alt=""/>
+      </div>
+      <video src={project.video} controls/>
     </div>
-    )
-    
-
+  );
 
 }
 

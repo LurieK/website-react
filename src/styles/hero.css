@@ -34,6 +34,8 @@
     /* overflow: auto; */
     overflow: hidden;
     position: relative;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .img-container::after {
