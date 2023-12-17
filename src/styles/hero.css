@@ -126,7 +126,7 @@ a:link {
     }
 } */
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
 
 .opening{
     display: flex;
