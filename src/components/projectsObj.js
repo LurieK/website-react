@@ -8,25 +8,36 @@ import pomedoro from '../images/working_phone.png'
 const ProjectsObj = [
     {
         title: `Today's Todos`,
-        image: todolistLaptop,
+        mainImage: todolistLaptop,
         url: '',
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         key: 1,
-        stack: ['React']
+        stack: ['React'],
+        liveLink: '',
+        github: '',
+        image1: '',
+        image2: '',
+        video: '',
 
     },
     {
         title: `Pomedoro App`,
-        image: pomedoro,
+        mainImage: pomedoro,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 5,
-        stack: ['React']
+        stack: ['React'],
+        liveLink: '',
+        github: '',
+        image1: '',
+        image2: '',
+        video: '',
+
 
     },
      {
         title: `Daily Tarot`,
-        image: tarotLaptop,
+        mainImage: tarotLaptop,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 2,
@@ -36,22 +47,34 @@ const ProjectsObj = [
     {
         title: `What's Her Name Again?`,
         client: true,
-        image: WWHNA,
+        mainImage: WWHNA,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 3,
-        stack: ['PHP', 'JavaScript']
+        stack: ['PHP', 'JavaScript'],
+        liveLink: '',
+        github: '',
+        image1: '',
+        image2: '',
+        video: '',
+
 
 
     },
     {
         title: `Lauren Harkness`,
         client: true,
-        image: Lauren,
+        mainImage: Lauren,
         summary: 'I am a Software Developer skilled in React, JavaScript, and CSS. My love for tech is fueled by curiosity and a commitment to simplify people\'s lives.',
         url: '',
         key: 4,
-        stack: ['Liquid']
+        stack: ['Liquid'],
+        liveLink: '',
+        github: '',
+        image1: '',
+        image2: '',
+        video: '',
+
 
     },
     
@@ -59,3 +82,4 @@ const ProjectsObj = [
 
 ]
 export default ProjectsObj
+

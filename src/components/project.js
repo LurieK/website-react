@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
 
 
-function Project ({ stack, link, title, image, onHoverPause, client }){
+function Project ({ stack, title, image, onHoverPause, client, id }){
 
 
 const displayStack = stack.map((item, index)=>{
@@ -26,10 +27,9 @@ return (
         <div className= 'projects-right'>
             <h3>{title}{client && ' (Client Project)'}</h3>
 
-            <button 
-                
-            >
-            <a href={link}>VIEW</a></button>
+            <button >
+            <Link to={`/project/${id}`}>VIEW</Link>
+            </button>
             <span className='stack'>{displayStack}</span>
             
             

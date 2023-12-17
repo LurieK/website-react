@@ -59,9 +59,7 @@
     flex-direction: column;
 }
 
-.responsive-opening {
-    display: none;
-}
+
 
 .subtitle {
     display: flex;
@@ -127,3 +125,19 @@ a:link {
         align-self: center;
     }
 } */
+
+@media screen and (max-width: 1350px) {
+
+.opening{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-container{
+    display: flex;
+    flex-flow: column;
+    margin-top: 40px;
+}
+
+}
