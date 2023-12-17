@@ -27,9 +27,9 @@ return (
         <div className= 'projects-right'>
             <h3>{title}{client && ' (Client Project)'}</h3>
 
-            <button >
+            
             <Link to={`/project/${id}`}>VIEW</Link>
-            </button>
+           
             <span className='stack'>{displayStack}</span>
             
             

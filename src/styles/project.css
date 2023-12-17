@@ -27,7 +27,7 @@
     color: #2B3242;
 }
 
-.projects-right button {
+.projects-right a{
     background-color: #2B3242;
     border: none;
     padding: 10px;
@@ -57,7 +57,7 @@
     
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1000px) {
 
     .project {
     display: flex;
