@@ -17,14 +17,14 @@ const project = ProjectsObj.find(project => project.key.toString() === id)
   console.log(project)
 
   return (
-    <div className='Project-body'>
+    <div className='project-body'>
       <h1>{project.title}</h1>
-      <h3>{project.stack.join(', ')}</h3> {/* Assuming stack is an array */}
-      <div> 
-          <h3>{project.link}</h3>
-          <h3>{project.github}</h3>
+      <h3>{project.stack.join(', ')}</h3>
+      <div className='external-links'> 
+          <h3><a href={project.link}>View Live</a></h3>
+          <h3><a href={project.github}>View GitHub</a></h3>
       </div>
-      <img src={project.mainImage} alt={project.title}/>
+      <img className='main-image' src={project.mainImage} alt={project.title}/>
       <p>{project.summary}</p>
       <div>
           <img src={project.image1} alt=""/>
