@@ -8,7 +8,12 @@ function ViewProject(){
 
 let {id } =useParams()
 
-
+//to add bold text within summaryies 
+const renderText = (text) => {
+        return text.split('**').map((part, index) => 
+            index % 2 === 1 ? <strong key={index}>{part}</strong> : part
+        );
+    };
 
 const project = ProjectsObj.find(project => project.key.toString() === id)
 
@@ -27,15 +32,15 @@ const project = ProjectsObj.find(project => project.key.toString() === id)
           <h3><a href={project.github} target='_blank'>View GitHub</a></h3>
       </div>
       <img className='main-image' src={project.mainImage} alt={project.title}/>
-      <p>{project.summary1}</p>
+      <p>{renderText(project.summary1)}</p>
       <div className='img-para'>
           <img className={project.image2 === '' ? 'mobile-img' : 'img2'} 
           src={project.image2 === '' ? project.image_mobile : project.image2} alt=""/>
         
-          <p>{project.summary2}</p>
+          <p>{renderText(project.summary2)}</p>
       </div>
       
-      <p>{project.conclusion}</p>
+      <p>{renderText(project.conclusion)}</p>
       <video className='video' src={project.video} controls/>
     </div>
   );
