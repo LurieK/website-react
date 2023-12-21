@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    margin: 20px;
 }
 
 .project-body h3{
@@ -12,6 +13,7 @@
 .project-body h1{
     font-size: 80px;
 }
+
 
 .external-links {
     display: flex;
@@ -30,5 +32,23 @@ h3 a:visited{
 }
 
 .main-image{
+    width: 50%;
+}
+
+.video{
+    width: 40%;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.img-para{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-img{
     width: 50%;
 }
