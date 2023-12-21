@@ -24,7 +24,9 @@ return (
         <img 
             className= 'project-img' 
             src={image}/>
-        <div className= 'projects-right'>
+        <div className= 'projects-right' 
+        onMouseEnter={()=> onHoverPause(false)}
+        onMouseOut={()=> onHoverPause(true)}>
             <h3>{title}{client && ' (Client Project)'}</h3>
 
             
