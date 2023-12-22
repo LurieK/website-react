@@ -9,6 +9,12 @@
     
 }
 
+.projects-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
 
 .projects-right{
     display: flex;
@@ -44,12 +50,12 @@
     
 }
 
-.projects-right span p{
+.projects-left span p{
     font-size: 16px;
     margin: 5px
 }
 
-.stack span{
+.projects-left .stack{
     display: flex;
     flex-flow: row;
     margin-top: 10px;

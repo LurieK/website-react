@@ -3,16 +3,19 @@
     justify-content: center;
     align-items: center;
     flex-flow: column;
-    margin: 20px;
+    margin: 100px;
 }
 
 .project-body h3{
-    color: black
+    color: black;
+    font-family: 'Montserrat';
 }
 
 .project-body h1{
     font-size: 80px;
 }
+
+
 
 
 .external-links {
@@ -50,5 +53,5 @@ h3 a:visited{
 }
 
 .mobile-img{
-    width: 50%;
+    width: 40%;
 }
