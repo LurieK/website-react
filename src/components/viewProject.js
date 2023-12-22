@@ -26,9 +26,9 @@ const project = ProjectsObj.find(project => project.key.toString() === id)
   return (
     <div className='project-body'>
       <h1>{project.title}</h1>
-      <h3>{project.stack.join(', ')}</h3>
+      <h3>{project.stack.join(' | ')}</h3>
       <div className='external-links'> 
-          <h3><a href={project.link} target='_blank'>View Live</a></h3>
+          <h3><a href={project.liveLink} target='_blank'>View Live</a></h3>
           <h3><a href={project.github} target='_blank'>View GitHub</a></h3>
       </div>
       <img className='main-image' src={project.mainImage} alt={project.title}/>

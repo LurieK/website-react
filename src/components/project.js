@@ -21,20 +21,17 @@ return (
         className='project'
         onMouseEnter={()=> onHoverPause(false)}
         onMouseOut={()=> onHoverPause(true)}>
+        <div className='projects-left'>
         <img 
             className= 'project-img' 
             src={image}/>
+        <span className='stack'>{displayStack}</span>
+        </div>
         <div className= 'projects-right' 
         onMouseEnter={()=> onHoverPause(false)}
         onMouseOut={()=> onHoverPause(true)}>
             <h3>{title}{client && ' (Client Project)'}</h3>
-
-            
-            <Link to={`/project/${id}`}>VIEW</Link>
-           
-            <span className='stack'>{displayStack}</span>
-            
-            
+            <Link to={`/project/${id}`}>VIEW</Link> 
         </div>
     
     </div>
