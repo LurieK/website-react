@@ -8,8 +8,8 @@ const displayStack = stack.map((item, index)=>{
     
     return (
         <span key= {index} >
-            <p> {item} </p>
-            {index < stack.length -1 && <p>|</p>}
+            <p> {item} {index < stack.length -1 && '|'}</p>
+            
         </span>
         )
     
@@ -25,13 +25,14 @@ return (
         <img 
             className= 'project-img' 
             src={image}/>
-        <span className='stack'>{displayStack}</span>
+        
         </div>
         <div className= 'projects-right' 
         onMouseEnter={()=> onHoverPause(false)}
         onMouseOut={()=> onHoverPause(true)}>
             <h3>{title}{client && ' (Client Project)'}</h3>
             <Link to={`/project/${id}`}>VIEW</Link> 
+            <span className='stack'>{displayStack}</span>
         </div>
     
     </div>

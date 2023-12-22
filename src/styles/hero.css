@@ -36,6 +36,7 @@
     position: relative;
     margin-bottom: 40px;
     margin-top: 40px;
+    padding-right: 40px;
 }
 
 .img-container::after {
