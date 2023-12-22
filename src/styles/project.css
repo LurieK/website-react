@@ -50,12 +50,12 @@
     
 }
 
-.projects-left span p{
+.projects-right span p{
     font-size: 16px;
     margin: 5px
 }
 
-.projects-left .stack{
+.projects-right .stack{
     display: flex;
     flex-flow: row;
     margin-top: 10px;
