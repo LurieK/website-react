@@ -45,7 +45,7 @@ const ProjectsObj = [
         While it doesn't add additional errors, by adding one simple boolean State, this app went from tracking one timer, to becoming a daily tool that can keep a user on track, help them set goals, and manage their time more efficiently.`,
         key: 5,
         stack: ['React'],
-        liveLink: '',
+        liveLink: 'https://luriek.github.io/pomodoro/',
         github: 'https://github.com/LurieK/pomodoro',
         image_mobile: pomodoro2,
         image2: '',
