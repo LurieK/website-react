@@ -5,7 +5,7 @@ import tarotLaptop from '../images/tarot_laptop.png';
 import tarot_mobile from '../images/tarot_mobile.png';
 import tarot_video from '../video/Tarot_video.mov';
 import WWHNA from'../images/WWHNA_computer.png';
-import wwhna_video from '../video/wwhna_video.mov';
+
 import Lauren from '../images/LH_computer.png';
 import pomedoro from '../images/working_phone.png';
 import pomdedoro2 from '../images/break_phone.png';

@@ -19,8 +19,7 @@ const displayStack = stack.map((item, index)=>{
 return (
     <div  
         className='project'
-        onMouseEnter={()=> onHoverPause(false)}
-        onMouseOut={()=> onHoverPause(true)}>
+        >
         <img 
             className= 'project-img' 
             src={image}/>
