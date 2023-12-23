@@ -63,6 +63,7 @@ const ProjectsObj = [
         key: 2,
         stack: ['JavaScript','Express JS','Async API'],
         liveLink:'https://working-state--famous-pithivier-c2c9b0.netlify.app/',
+        github: 'https://github.com/LurieK/DailyTarot/tree/dailyTarot',
         image_mobile: tarot_mobile,
         image2: '',
         video: tarot_video
