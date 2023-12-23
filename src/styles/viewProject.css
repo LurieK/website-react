@@ -57,7 +57,11 @@ h3 a:visited{
 }
 
 @media screen and (max-width: 750px) {
-
+    
+    .project-body{
+        margin: 50px;
+    }
+    
     .project-body h1 {
         font-size: 60px;
     }

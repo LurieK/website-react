@@ -10,9 +10,9 @@ import wwhna_video from '../video/wwhna_video.mov';
 import Lauren from '../images/LH_computer.png';
 import Lauren1 from '../images/Lauren_img2.png';
 import lauren_video from '../video/lauren_video.mov'
-import pomedoro from '../images/working_phone.png';
-import pomdedoro2 from '../images/break_phone.png';
-import pomedoro_video from '../video/pomedoro.mov'; 
+import pomodoro from '../images/working_phone.png';
+import pomodoro2 from '../images/break_phone.png';
+import pomodoro_video from '../video/pomodoro.mov'; 
 
 const ProjectsObj = [
     {
@@ -25,15 +25,15 @@ const ProjectsObj = [
         key: 1,
         stack: ['React'],
         liveLink: 'https://luriek.github.io/React-todolist/',
-        github: 'https://github.com/LurieK/React-todolist/tree/LurieK-patch-4/src',
+        github: 'https://github.com/LurieK/React-todolist/tree/LurieK-patch-4',
         image_mobile: todolist_mobile,
         image2: '',
         video: todolist_video,
 
     },
     {
-        title: `Pomedoro App`,
-        mainImage: pomedoro,
+        title: `Pomodoro App`,
+        mainImage: pomodoro,
         url:'',
         summary1: `The inspiration for this project stemmed from curiosity about **useState**.  Knowing that one State could manage multiple events in React, I wanted to explore what would happen if I used one State to handle a countdown timer. This single State would also set off an alarm and restart a new timer. 
         Would that be a possible use of State?  If yes, would it be efficient or cause unpredicted errors?  If not, what would be a better way to manage a timer? 
@@ -46,10 +46,10 @@ const ProjectsObj = [
         key: 5,
         stack: ['React'],
         liveLink: '',
-        github: 'https://github.com/LurieK/pomedoro',
-        image_mobile: pomdedoro2,
+        github: 'https://github.com/LurieK/pomodoro',
+        image_mobile: pomodoro2,
         image2: '',
-        video: pomedoro_video,
+        video: pomodoro_video,
 
 
     },

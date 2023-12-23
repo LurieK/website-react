@@ -68,25 +68,11 @@ header {
     z-index: 1;
 }
 @media screen and (max-width: 1000px) {
-    header {
-        display: none;
-    }
-
-   
-
     
-
-   
 
     .opening h1 {
         font-size: 75px;
     }
-
-
-
-   
-
-   
 
     .opening h1 {
         margin-bottom: 5%;
@@ -96,9 +82,7 @@ header {
         padding-top: 0;
     }
 
-    
 
-    
     .subtitle {
         display: flex;
         flex-flow: column;

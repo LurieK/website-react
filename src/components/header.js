@@ -23,7 +23,7 @@ return(
         <ul className="menu">
             <li>
                 <a href="/">
-                    <p>Projects</p>
+                    <p>Home</p>
                 </a>
             </li>
             <li>
