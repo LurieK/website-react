@@ -49,6 +49,10 @@
     animation: scroll 10s linear infinite;
 }
 
+/* .scrollable {
+    overflow: auto;
+} */
+
 .opening-img {
     width: 100%;
     height:max-content;
@@ -129,7 +133,7 @@ a:link {
     }
 } */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
 .opening{
     display: flex;

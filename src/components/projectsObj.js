@@ -12,6 +12,7 @@ import pomedoro from '../images/working_phone.png';
 import pomdedoro2 from '../images/break_phone.png';
 import pomedoro_video from '../video/pomedoro.mov'; 
 
+
 const ProjectsObj = [
     {
         title: `Today's Todos`,
@@ -59,7 +60,7 @@ const ProjectsObj = [
         conclusion: `My exploration concluded that Express.js not only bolsters API security but also enhances code efficiency and scalability. This transition resulted in cleaner, more organized code, laying a strong foundation for future feature additions and ensuring smooth scalability without unexpected errors. As the project continues to evolve, this structure will be instrumental in its growth and stability.`,
         url: '',
         key: 2,
-        stack: ['JavaScript','Express JS','Async API'],
+        stack: ['JS |','Express JS |','Async API'],
         liveLink:'https://working-state--famous-pithivier-c2c9b0.netlify.app/',
         image_mobile: tarot_mobile,
         image2: '',
@@ -75,7 +76,7 @@ const ProjectsObj = [
         conclusion: `In conclusion, adding PHP to an HTML/CSS/JavaScript site and uploading it to WordPress turned out to be an effective strategy for enhancing client customization. It's particularly useful for clients who need a landing page but also want the flexibility to update content, images, and other elements as necessary. The only downside I noted was the increase in code volume compared to using a pre-built WordPress theme. However, this approach is ideal for custom site requirements, offering a good balance between customization and client autonomy. `,
         url: '',
         key: 3,
-        stack: ['PHP', 'JavaScript'],
+        stack: ['PHP |', 'JS'],
         liveLink: '',
         github: '',
         image1: '',

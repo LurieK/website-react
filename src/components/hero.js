@@ -62,7 +62,7 @@ function Hero(){
             link={project.url}
             stack={project.stack}
             client = {project.client}
-            onHoverPause = {handleHover} />
+             />
         
     )
 
@@ -104,6 +104,8 @@ return (
         <div 
             className="img-container"
             ref= {containerRef}
+            onMouseOver={()=> handleHover(false)}
+            onMouseOut={()=> handleHover(true)}
         >
             {projectList}
             {projectList}

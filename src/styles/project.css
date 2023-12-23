@@ -43,21 +43,22 @@
 
 }
 
-.projects-right .stack{
-    display:flex;
-    flex-flow: row;
-    
-    
-}
+
 
 .projects-right span p{
     font-size: 16px;
-    margin: 5px
+    margin: 5px;
+    
+}
+
+.item{
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .projects-right .stack{
     display: flex;
-    flex-flow: row;
+    flex-flow: wrap;
     margin-top: 10px;
    
     
