@@ -31,11 +31,11 @@ return(
                     <p>Blog</p>
                 </a>
             </li>
-            <li>
+            {/* <li>
                 <a href="#about">
                     <p>About</p>
                 </a>
-            </li>
+            </li> */}
             <li>
                 <a href="#contact">
                     <p>Contact</p>
