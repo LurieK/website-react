@@ -31,27 +31,9 @@
 .img-container{
     width: 50%;
     height: 650px;
-    /* overflow: auto; */
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    padding-right: 40px;
-}
-
-.img-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    animation: scroll 10s linear infinite;
-}
-
-/* .scrollable {
     overflow: auto;
-} */
+}
+
 
 .opening-img {
     width: 100%;
@@ -132,19 +114,3 @@ a:link {
         align-self: center;
     }
 } */
-
-@media screen and (max-width: 1100px) {
-
-.opening{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.img-container{
-    display: flex;
-    flex-flow: column;
-    margin-top: 40px;
-}
-
-}

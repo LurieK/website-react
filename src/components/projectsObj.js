@@ -7,11 +7,9 @@ import tarot_video from '../video/Tarot_video.mov';
 import WWHNA from'../images/WWHNA_computer.png';
 import wwhna_video from '../video/wwhna_video.mov';
 import Lauren from '../images/LH_computer.png';
-import Lauren_video from '../video/lauren_video.mov';
 import pomedoro from '../images/working_phone.png';
 import pomdedoro2 from '../images/break_phone.png';
 import pomedoro_video from '../video/pomedoro.mov'; 
-
 
 const ProjectsObj = [
     {
@@ -81,7 +79,7 @@ const ProjectsObj = [
         github: '',
         image1: '',
         image2: '',
-        video: wwhna_video,
+        video: '',
 
 
 
@@ -105,7 +103,7 @@ const ProjectsObj = [
         github: '',
         image1: '',
         image2: '',
-        video: Lauren_video,
+        video: '',
 
 
     },
