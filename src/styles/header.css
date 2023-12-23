@@ -103,7 +103,18 @@ header {
         text-align: center;
     }
 
-    p {
-        font-weight: 300;
+    
+
+    .header-links p{
+        display: none;
     }
+
+    .menu {
+        padding-right: 5px;
+    }
+
+    .menu p{
+        font-size: 16px;
+    }
+
 }
