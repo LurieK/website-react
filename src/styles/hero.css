@@ -115,7 +115,15 @@ a:link {
 
     }
 
+    .opening-text{
+        margin-top: 40px;
+    }
+
     .img-container {
         margin: 50px;
+    }
+
+    .opening h1{
+        font-size: 65px;
     }
 }
