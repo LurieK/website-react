@@ -55,3 +55,31 @@ h3 a:visited{
 .mobile-img{
     width: 40%;
 }
+
+@media screen and (max-width: 750px) {
+
+    .project-body h1 {
+        font-size: 60px;
+    }
+
+    .img-para {
+        display: flex;
+        flex-flow: column;
+        justify-content: row;
+        align-items: center;
+    }
+
+    .mobile-img {
+        width: 80%;
+    }
+
+    .main-image {
+        width: 100%;
+    }
+
+    .video {
+        width: 100%
+    }
+
+
+}

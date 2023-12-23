@@ -109,7 +109,6 @@ return (
         >
             {projectList}
             {projectList}
-            {projectList}
         </div>
 
         

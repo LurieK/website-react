@@ -4,9 +4,12 @@ import todolist_video   from '../video/todos_mov.mov'
 import tarotLaptop from '../images/tarot_laptop.png';
 import tarot_mobile from '../images/tarot_mobile.png';
 import tarot_video from '../video/Tarot_video.mov';
-import WWHNA from'../images/WWHNA_computer.png';
-
+import WWHNA from '../images/WWHNA_computer.png';
+import WWHNA1 from '../images/wwhna_img2.png';
+import wwhna_video from '../video/wwhna_video.mov';
 import Lauren from '../images/LH_computer.png';
+import Lauren1 from '../images/Lauren_img2.png';
+import lauren_video from '../video/lauren_video.mov'
 import pomedoro from '../images/working_phone.png';
 import pomdedoro2 from '../images/break_phone.png';
 import pomedoro_video from '../video/pomedoro.mov'; 
@@ -58,7 +61,7 @@ const ProjectsObj = [
         conclusion: `My exploration concluded that Express.js not only bolsters API security but also enhances code efficiency and scalability. This transition resulted in cleaner, more organized code, laying a strong foundation for future feature additions and ensuring smooth scalability without unexpected errors. As the project continues to evolve, this structure will be instrumental in its growth and stability.`,
         url: '',
         key: 2,
-        stack: ['JS |','Express JS |','Async API'],
+        stack: ['JavaScript','Express JS','Async API'],
         liveLink:'https://working-state--famous-pithivier-c2c9b0.netlify.app/',
         image_mobile: tarot_mobile,
         image2: '',
@@ -74,12 +77,12 @@ const ProjectsObj = [
         conclusion: `In conclusion, adding PHP to an HTML/CSS/JavaScript site and uploading it to WordPress turned out to be an effective strategy for enhancing client customization. It's particularly useful for clients who need a landing page but also want the flexibility to update content, images, and other elements as necessary. The only downside I noted was the increase in code volume compared to using a pre-built WordPress theme. However, this approach is ideal for custom site requirements, offering a good balance between customization and client autonomy. `,
         url: '',
         key: 3,
-        stack: ['PHP |', 'JS'],
+        stack: ['PHP', 'JavaScript'],
         liveLink: '',
         github: '',
-        image1: '',
+        image_mobile: WWHNA1,
         image2: '',
-        video: '',
+        video: wwhna_video,
 
 
 
@@ -88,22 +91,17 @@ const ProjectsObj = [
         title: `Lauren Harkness`,
         client: true,
         mainImage: Lauren,
-        summary1: `The inspiration for this project stemed out of a curiousity about useState and if one state could be used to manage multiple events in React.
-        I asked myself what would happen if I used a count down timer, managed in state, that set off a timer, and restarted a new timer. Would that be the most efficient use of state?  If yes, would it cause errors?  If not what would be a better way to manage a timer? 
-        Already using the pomedoro method to manage my time, I opted to build a pomedoro app and explore these questions.`,
-        summary2: `In the initial stages of building the Pomodoro app, the primary focus was creating a functioning timer. This was achieved using a single state, countDownTime, to track the time.  This works alongside a useEffect hook that implements setInterval for the countdown. This setup effectively managed one timer, yet another state was needed to switch between counting down from 25 minutes or 5 minutes, which is the standard practice in a pomedoro app. This lead to creating a second state 'isWorking.' It is a boolean state that 
-        if true sets the countdown to 25 minutes and if false, 5 minutes. The synergy between isWorking and countDownTime also opened the door to add features that 
-        that make the app more user friendly as well. For instance, tracking the cumulative time spent between work and breaks, by passing isWorking as a prop to a tracker compenent, as well as integrating an alarm by passing countDownTime to a alarm component.`,
-        conclusion: `In conclusion it seems that while one state can be used to manage multiple feautres in a app, it isn't the moste effient way to make a versitiale app that tangibly useful for users.  
-        While it doesn't add additional errors, by adding one simple boolean state this app went from trakcing one timer, to becoming a daily tool that can keep a user on track, help them set goals, and manage their time more efficiently.`,
+        summary1: `Lauren Harkness’ team approached me looking to enhance the customization of her event page on her Shopify site. Each event was being individually added to the liquid code in its current build.  While they could edit the event, they could not add or delete new events without a developer's intervention.  My goal was to create a customized block that her team could use to add, remove, and update events freely.`,
+        summary2: `Using the framework for the current events already designed, I wrapped the basic outline in a for-loop that generates new events in the editor. Once this was completed, it became clear that styling features would need to be adjusted in each event. So, I added additional customizers to the block to allow the user to change image sizes, placements, and links as needed. This way, the custom events still retain the original styling while giving the client full control over the products they sell.`,
+        conclusion: `I think it is widespread for business owners to feel disempowered regarding their technical tools.  As a result, they spend more time and even more money to make tech work instead of focusing on the growth of their business. Creating a customized block for Lauren’s site makes her backend more user-friendly, and the team can now fully manage event promotion. `,
         url: '',
         key: 4,
         stack: ['Liquid'],
         liveLink: '',
         github: '',
-        image1: '',
+        image_mobile: Lauren1,
         image2: '',
-        video: '',
+        video: lauren_video,
 
 
     },
