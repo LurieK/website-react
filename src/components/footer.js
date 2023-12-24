@@ -30,6 +30,7 @@ return(
                 </a>
             </li>
         </ul>
+        <p>This site was built and desgined by Lurie Kimmerle - <a href='https://github.com/LurieK/website-react.git' target='_blank' alt='link to sites repository'>View the repository on Github</a></p>
     </div>
 
     
