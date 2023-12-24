@@ -16,7 +16,16 @@
     font-size: 80px;
 }
 
+.project-body a:visited{
+    color: black;
+    font-weight: 600;
+}
 
+.project-body a {
+    color: black;
+    font-weight: 600;
+
+}
 
 
 .external-links {

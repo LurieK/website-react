@@ -8,12 +8,37 @@ function ViewProject(){
 
 let {id } =useParams()
 
-//to add bold text within summaryies 
+//to add bold text within summaries 
 const renderText = (text) => {
-        return text.split('**').map((part, index) => 
-            index % 2 === 1 ? <strong key={index}>{part}</strong> : part
+    // Split for bold formatting
+    const parts = text.split('**');
+    
+    return parts.map((part, index) => {
+      // look for odd index to make bold (the first index is alway not bold)
+      if (index % 2 === 1) {
+        return <strong key={index}>{part}</strong>;
+      }
+      
+      // Check and replace links in non-bold parts
+      const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/;
+      const linkMatch = part.match(linkRegex);
+
+      if (linkMatch) {
+        const preText = part.substring(0, part.indexOf(linkMatch[0]));
+        const postText = part.substring(part.indexOf(linkMatch[0]) + linkMatch[0].length);
+        return (
+          <span key={index}>
+            {preText}
+            <a href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className='text-link'>{linkMatch[1]}</a>
+            {postText}
+          </span>
         );
-    };
+      }
+
+      // Return part as is if no link is found
+      return part;
+    });
+  };
 
 const project = ProjectsObj.find(project => project.key.toString() === id)
 
