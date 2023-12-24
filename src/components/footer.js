@@ -18,7 +18,7 @@ return(
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/luriekimmerle/" target="_blank">
+                <a href="https://www.linkedin.com/in/lurie-kimmerle/" target="_blank">
                     <img alt="linkedin" src={linkedin_white}/>
                     <p>LinkedIn</p>
                 </a>
