@@ -32,6 +32,7 @@
     width: 50%;
     height: 650px;
     overflow: auto;
+    animation: scroll 10s linear;
 }
 
 

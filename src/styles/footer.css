@@ -47,6 +47,7 @@ ul img {
 .contact a{
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .contact a:hover{
@@ -68,5 +69,10 @@ ul img {
     .links {
         margin-left: 0;
         padding-left: 0;
+    }
+
+    .credit{
+        font-size: 16px;
+        text-align: center;
     }
 }
