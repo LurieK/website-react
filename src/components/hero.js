@@ -19,26 +19,46 @@ function Hero(){
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
 
-    useEffect(()=>{
-        let intervalId; //store the ID of the interval
+    useEffect(() => {
+      let requestId;
+        //define scroll animation as scroll
+      const scroll = () => {
+        if (notHovering && containerRef.current) {//if not hovering 
+          containerRef.current.scrollTop += 1; //start scroll
+          requestId = requestAnimationFrame(scroll);//run scroll continuosly
+        }
+      };
+    //run scroll if not hovering
+      if (notHovering) {
+        requestId = requestAnimationFrame(scroll);
+      }
+    //cleanup function
+      return () => {
+        cancelAnimationFrame(requestId);
+      };
+    }, [notHovering]);
 
-        if(notHovering){//only scrolls when the projects are not being hovered over
-            const step = 3; //set scroll to 3 pixels for each interval
+
+    // useEffect(()=>{
+    //     let intervalId; //store the ID of the interval
+
+    //     if(notHovering){//only scrolls when the projects are not being hovered over
+    //         const step = 1; //set scroll to 3 pixels for each interval
             
-            //set interval to scroll content
-            intervalId= setInterval(()=> {
-                if (containerRef.current){//if the referenced DOM element is defined (in JSX)
-                    containerRef.current.scrollTop += step //implement scroll
-                }
-            }, 50)//fires every 50 milliseconds
-        }
-        return ()=>{
-            if(intervalId){
-                clearInterval(intervalId)//prevent memory leaks
-            }
-        }
+    //         //set interval to scroll content
+    //         intervalId= setInterval(()=> {
+    //             if (containerRef.current){//if the referenced DOM element is defined (in JSX)
+    //                 containerRef.current.scrollTop += step //implement scroll
+    //             }
+    //         }, 25)//fires every 50 milliseconds
+    //     }
+    //     return ()=>{
+    //         if(intervalId){
+    //             clearInterval(intervalId)//prevent memory leaks
+    //         }
+    //     }
     
-    },[notHovering])//changes when notHover state changes
+    // },[notHovering])//changes when notHover state changes
 
     //stop the scroll or start depending on hover
     //values are passed in project.js
