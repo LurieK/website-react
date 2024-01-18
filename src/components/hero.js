@@ -1,5 +1,6 @@
 import headshot from'../images/IMG_1364.JPG';
 import ProjectDesktop from './projectsDesktop';
+import ProjectsMobile from './projectsMobile';
 import  React, { useState, useEffect, useRef }  from 'react';
 import useVisibility from '../components/useVisable';
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
@@ -9,9 +10,7 @@ import { useMediaQuery } from '@mui/material';
 
 
 function Hero(){
-    //State for hoving and ref for the project container
-    const [notHovering, setNotHovering] = useState(true);
-    const containerRef= useRef(null);
+    const mobile = useMediaQuery('(max-width:950px')
 
     //fade in on load
     const [isVisible, ref] = useVisibility();
@@ -20,14 +19,6 @@ function Hero(){
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
-
-    
-
-    
-
-
-    
-
 
 
 return (
@@ -63,8 +54,9 @@ return (
                 </li>
             </ul>
         </div>
-        
-        <ProjectDesktop/>
+        {/* conditionally render projects component base on mediaquery */}
+        {mobile? <ProjectsMobile/> : <ProjectDesktop/>}
+     
 
         
 
