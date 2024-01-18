@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 
 
-function Project ({ stack, title, image, onHoverPause, client, id }){
+function Project ({ stack, title, image, client, id }){
 
 
 
