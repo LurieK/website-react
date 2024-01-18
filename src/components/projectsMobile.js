@@ -12,6 +12,23 @@ function ProjectsMobile(){
         opacity: isVisible ? 1 : 0,
         transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
     };
+
+    const scrollUp = ()=> {
+        window.scrollTo({
+            top: window.scrollY - 600,
+            behavior: 'smooth'
+        
+        }
+        
+        )
+    }
+
+     const scrollDown =()=> {
+        window.scrollTo({
+            top: window.scrollY + 660,
+            behavior: 'smooth' 
+        })
+     }
     
     const projectList = projectsObj.map(project=> 
         <Project 
@@ -27,7 +44,7 @@ function ProjectsMobile(){
     )
     return(
 
-        
+
         <div className='img-container'>
             {projectList}
         </div>
