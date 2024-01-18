@@ -5,6 +5,7 @@ import  React, { useState, useEffect, useRef }  from 'react';
 import useVisibility from '../components/useVisable';
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { RiJavascriptLine } from "react-icons/ri";
+import resume from '../documents/Lurie_Kimmerle.pdf';
 
 function Hero(){
     //State for hoving and ref for the project container
@@ -39,26 +40,7 @@ function Hero(){
     }, [notHovering]);
 
 
-    // useEffect(()=>{
-    //     let intervalId; //store the ID of the interval
-
-    //     if(notHovering){//only scrolls when the projects are not being hovered over
-    //         const step = 1; //set scroll to 3 pixels for each interval
-            
-    //         //set interval to scroll content
-    //         intervalId= setInterval(()=> {
-    //             if (containerRef.current){//if the referenced DOM element is defined (in JSX)
-    //                 containerRef.current.scrollTop += step //implement scroll
-    //             }
-    //         }, 25)//fires every 50 milliseconds
-    //     }
-    //     return ()=>{
-    //         if(intervalId){
-    //             clearInterval(intervalId)//prevent memory leaks
-    //         }
-    //     }
     
-    // },[notHovering])//changes when notHover state changes
 
     //stop the scroll or start depending on hover
     //values are passed in project.js
@@ -99,7 +81,7 @@ return (
             
             <div className="subtitle">
         
-               
+                <p className="email"><a href={resume} target='_blank'>Resume</a></p>
                 <p className="email"><a href="mailto:LuraineKimmerle@gmail.com?subject=Website%20Inquiry">Get in Touch</a>
                 </p>
             </div>
