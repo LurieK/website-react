@@ -1,10 +1,13 @@
-import  React, { useState, useEffect, useRef }  from 'react';
+import  React, {  useRef }  from 'react';
 import projectsObj from './projectsObj';
 import Project from './project';
 import useVisibility from '../components/useVisable';
+import { RiArrowUpSFill, RiArrowDownSFill } from "react-icons/ri";
+
 
 function ProjectsMobile(){
-
+    const containerRef = useRef(null);
+    
     //fade in on load
     const [isVisible, ref] = useVisibility();
 
@@ -14,20 +17,15 @@ function ProjectsMobile(){
     };
 
     const scrollUp = ()=> {
-        window.scrollTo({
-            top: window.scrollY - 600,
-            behavior: 'smooth'
-        
+        if(containerRef.current){
+            containerRef.current.scrollTop -=660;
         }
-        
-        )
     }
 
      const scrollDown =()=> {
-        window.scrollTo({
-            top: window.scrollY + 660,
-            behavior: 'smooth' 
-        })
+        if(containerRef.current){
+            containerRef.current.scrollTop +=660;
+        }
      }
     
     const projectList = projectsObj.map(project=> 
@@ -44,9 +42,14 @@ function ProjectsMobile(){
     )
     return(
 
+        <div className='projects-mobile'>
+            <RiArrowUpSFill className='scroll-button' onClick={scrollUp}/>
 
-        <div className='img-container'>
-            {projectList}
+            <div className='img-container' ref={containerRef}>
+                {projectList}
+            </div>
+
+            <RiArrowDownSFill className='scroll-button' onClick={scrollDown}/>
         </div>
     
     )

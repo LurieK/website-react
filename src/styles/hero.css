@@ -103,6 +103,8 @@ a:link {
     height: auto;
 }
 
+
+
 @media screen and (max-width: 950px) {
     .opening {
         display: flex;
@@ -123,6 +125,20 @@ a:link {
     .img-container {
         margin: 50px;
         height: 650px;
+        
+    }
+
+    .projects-mobile{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .scroll-button {
+        width: 20%;
+        height: 20%;
+        color: gray
     }
 
     .opening h1{
