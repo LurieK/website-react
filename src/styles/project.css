@@ -30,6 +30,12 @@
     height: 300px;
 }
 
+.mobile-proj-image {
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+
 .projects-right h3{
     color: #2B3242;
 }

@@ -13,7 +13,7 @@ return (
    
         <img 
             loading="lazy" 
-            className= 'project-img' 
+            className= {id === 5? 'mobile-proj-image':'project-img'} 
             src={image}/>
      
         <div className= 'projects-right'>

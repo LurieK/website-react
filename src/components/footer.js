@@ -30,7 +30,7 @@ return(
                 </a>
             </li>
         </ul>
-        <p className='credit'>This site was built and desgined by Lurie Kimmerle - <a href='https://github.com/LurieK/website-react.git' target='_blank' alt='link to sites repository'>View the repository on Github</a></p>
+        <p className='credit'>This site was built and designed by Lurie Kimmerle - <a href='https://github.com/LurieK/website-react.git' target='_blank' alt='link to sites repository'>Click here to view the repository on Github</a></p>
     </div>
 
     
