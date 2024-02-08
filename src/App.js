@@ -21,8 +21,8 @@ function App() {
         <Route path="/" element={
             <>
               <Hero/>
-              {/* <Review /> */}
               <About />
+              <Review />
             </>
           } />
           <Route path="/project/:id" element={<ViewProject />} />

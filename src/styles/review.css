@@ -21,7 +21,7 @@
 } 
 
 .fadeInLeft {
-  animation: fadeInLeft 1.0s ease;
+  animation: fadeInLeft 2.0s ease;
 }
 
 .fadeOutRight {
@@ -64,7 +64,9 @@
     align-items: center;
     flex-flow: row;
     height: 500px;
-    background-color: #F6F6F6;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #e2e0e0b0;
    
     
 
@@ -86,12 +88,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-flow: column;
 }
 
 .review img{
     width: 80%;
     margin-left: 40px;
+}
+
+.reviewImg-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  height: 30rem;
 }
 
 .review h2{
@@ -110,12 +122,9 @@
 }
 
 .back-button, .forward-button{
-  border-radius: 100%;
   width: 100px;
   height: 90px;
-  border: none;
   cursor: pointer;
-  stroke-width: 1;
   color: #b3b3b3b0;
 
   
@@ -128,12 +137,22 @@
 }
 
 
-.back-button{
-  margin-left: 20px;
 
+
+@media screen and (max-width: 1300px){
+
+  .review{
+    flex-flow: column;
+  }
+
+ .reviews{
+  height: fit-content;
+ }
+
+ .reviewImg-container{
+    width: 15rem;
+    height: 20rem;
 }
 
-.forward-button {
-  margin-right: 20px;
+  
 }
-

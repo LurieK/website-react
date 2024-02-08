@@ -1,7 +1,7 @@
 import reviews from './reviewObj';
 import useVisibility from '../components/useVisable';
 import React, {useState } from 'react';
-import { IoChevronBackCircleOutline, IoChevronForwardCircleOutline } from "react-icons/io5";
+import { CiCircleChevLeft,CiCircleChevRight } from "react-icons/ci";
 
 
 
@@ -46,8 +46,14 @@ const reviewList = reviews.map((review) => {
         <h4>{review.project}</h4>
         <p>{review.review}</p>
       </div>
-      <div>
-        <img src={review.image} alt={review.name}/>
+      <div className='reviewImg-container'
+        style={{
+          backgroundImage: `url(${review.image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      >
+        {/* <img src={review.image} alt={review.name}/> */}
       </div>
     </div>
   );
@@ -58,11 +64,11 @@ const reviewList = reviews.map((review) => {
 return (
     <div ref={ref} style={sectionStyle} className='reviews'>
     
-      <IoChevronBackCircleOutline className= 'back-button' onClick={changeReviewLeft}/>
+      <CiCircleChevLeft className= 'back-button' onClick={changeReviewLeft}/>
 
         {reviewList[currentReviewIndex]}
       
-      <IoChevronForwardCircleOutline className= 'forward-button' onClick={changeReviewRight}/>
+      <CiCircleChevRight className= 'forward-button' onClick={changeReviewRight}/>
 
     </div>
 

@@ -2,7 +2,7 @@ import  React, {  useRef }  from 'react';
 import projectsObj from './projectsObj';
 import Project from './project';
 import useVisibility from '../components/useVisable';
-import { RiArrowUpSFill, RiArrowDownSFill } from "react-icons/ri";
+import { CiCircleChevUp, CiCircleChevDown } from "react-icons/ci";
 
 
 function ProjectsMobile(){
@@ -43,13 +43,13 @@ function ProjectsMobile(){
     return(
 
         <div className='projects-mobile'>
-            <RiArrowUpSFill className='scroll-button' onClick={scrollUp}/>
+            <CiCircleChevUp className='scroll-button' onClick={scrollUp}/>
 
             <div className='img-container' ref={containerRef}>
                 {projectList}
             </div>
 
-            <RiArrowDownSFill className='scroll-button' onClick={scrollDown}/>
+            <CiCircleChevDown className='scroll-button' onClick={scrollDown}/>
         </div>
     
     )
