@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 function ViewProject(){
 
-let {id } =useParams()
+let { id } =useParams()
 
 //to add bold text within summaries 
 const renderText = (text) => {
@@ -54,14 +54,14 @@ const project = ProjectsObj.find(project => project.key.toString() === id)
       <h3>{project.stack.join(' | ')}</h3>
       {!project.client ? 
         <div className='external-links'> 
-          <h3><a href={project.liveLink} target='_blank'>View Live</a></h3>
-          <h3><a href={project.github} target='_blank'>View GitHub</a></h3>
+          <h3><a href={project.liveLink} rel="noopener noreferrer" target='_blank'>View Live</a></h3>
+          <h3><a href={project.github} rel="noopener noreferrer" target='_blank'>View GitHub</a></h3>
       </div> : ''}
       <img className='main-image' src={project.mainImage} alt={project.title}/>
       <p>{renderText(project.summary1)}</p>
       <div className='img-para'>
-          <img className={project.image2 === '' ? 'mobile-img' : 'img2'} 
-          src={project.image2 === '' ? project.image_mobile : project.image2} alt=""/>
+          <img alt={`${project.title}`} className={project.image2 === '' ? 'mobile-img' : 'img2'} 
+          src={project.image2 === '' ? project.image_mobile : project.image2}/>
         
           <p>{renderText(project.summary2)}</p>
       </div>
