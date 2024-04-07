@@ -1,7 +1,5 @@
-import headshot from'../images/IMG_1364.JPG';
 import ProjectDesktop from './projectsDesktop';
 import ProjectsMobile from './projectsMobile';
-import  React, { useState, useEffect, useRef }  from 'react';
 import useVisibility from '../components/useVisable';
 import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaCss3Alt, FaHtml5 } from 'react-icons/fa';
 import { RiJavascriptLine } from "react-icons/ri";
