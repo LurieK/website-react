@@ -7,13 +7,13 @@ return(
     <header>
         <ul className="header-links">
             <li>
-                <a href="https://github.com/LurieK" target="_blank">
+                <a href="https://github.com/LurieK" rel="noopener noreferrer" target="_blank">
                     <img alt="github" src={github}/>
                     <p>GitHub</p>
                 </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/lurie-kimmerle/" target="_blank">
+                <a href="https://www.linkedin.com/in/lurie-kimmerle/" rel="noopener noreferrer" target="_blank">
                     <img alt='LinkedIn' src={linkedin3}/>
                     <p>LinkedIn</p>
                 </a>
@@ -31,11 +31,11 @@ return(
                     <p>Blog</p>
                 </a>
             </li>
-            {/* <li>
+            <li>
                 <a href="#about">
                     <p>About</p>
                 </a>
-            </li> */}
+            </li>
             <li>
                 <a href="#contact">
                     <p>Contact</p>

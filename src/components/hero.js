@@ -32,7 +32,7 @@ return (
             
             <div className="subtitle">
         
-                <p className="email"><a href={resume} target='_blank'>Resume</a></p>
+                <p className="email"><a href={resume} rel="noopener noreferrer" target='_blank'>Resume</a></p>
                 <p className="email"><a href="mailto:LuraineKimmerle@gmail.com?subject=Website%20Inquiry">Get in Touch</a>
                 </p>
             </div>
