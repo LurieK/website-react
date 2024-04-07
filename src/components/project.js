@@ -14,7 +14,8 @@ return (
         <img 
             loading="lazy" 
             className= {id === 5? 'mobile-proj-image':'project-img'} 
-            src={image}/>
+            src={image}
+            alt={`image of ${title}`}/>
      
         <div className= 'projects-right'>
             <h3>{title}{client && ' (Client Project)'}</h3>
