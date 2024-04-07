@@ -1,7 +1,7 @@
 import  React, { useState, useEffect, useRef }  from 'react';
 import projectsObj from './projectsObj';
 import Project from './project';
-import useVisibility from '../components/useVisable';
+
 
 function ProjectDesktop (){
 
@@ -10,12 +10,7 @@ function ProjectDesktop (){
     const containerRef= useRef(null);
 
     //fade in on load
-    const [isVisible, ref] = useVisibility();
-
-    const sectionStyle = {
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
-    };
+ 
 
     useEffect(() => {
       let requestId;

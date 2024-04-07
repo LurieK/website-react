@@ -17,7 +17,7 @@ function About (){
 return (
 
  <div ref={ref} style={sectionStyle} className="about" id="about">
-        <img alt="image of Lurie" src={headshot2}/>
+        <img alt="Lurie" src={headshot2}/>
         <div className="about-txt">
             <h2> 👋🏻 It's great to meet you!</h2>
             <p>

@@ -9,13 +9,14 @@ function Project ({ stack, title, image, client, id }){
 return (
     <div  
         className='project'
+        
         >
    
         <img 
             loading="lazy" 
             className= {id === 5? 'mobile-proj-image':'project-img'} 
             src={image}
-            alt={`image of ${title}`}/>
+            alt={`${title}`}/>
      
         <div className= 'projects-right'>
             <h3>{title}{client && ' (Client Project)'}</h3>
