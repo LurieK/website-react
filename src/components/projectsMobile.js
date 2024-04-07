@@ -1,20 +1,12 @@
 import  React, {  useRef }  from 'react';
 import projectsObj from './projectsObj';
 import Project from './project';
-import useVisibility from '../components/useVisable';
 import { CiCircleChevUp, CiCircleChevDown } from "react-icons/ci";
 
 
 function ProjectsMobile(){
     const containerRef = useRef(null);
     
-    //fade in on load
-    const [isVisible, ref] = useVisibility();
-
-    const sectionStyle = {
-        opacity: isVisible ? 1 : 0,
-        transform: isVisible ? 'translateY(0)' : 'translateY(100px)'
-    };
 
     const scrollUp = ()=> {
         if(containerRef.current){

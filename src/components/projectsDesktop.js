@@ -9,9 +9,6 @@ function ProjectDesktop (){
     const [notHovering, setNotHovering] = useState(true);
     const containerRef= useRef(null);
 
-    //fade in on load
- 
-
     useEffect(() => {
       let requestId;
         //define scroll animation as scroll
